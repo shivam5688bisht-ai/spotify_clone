@@ -93,7 +93,6 @@ input::placeholder{
 #login{
     border:2px solid white;
     background-color: white;
-    color: black;
     font-weight: bold;
     font-family: Arial,sans-serif;
     border-radius: 1000px;
@@ -106,8 +105,13 @@ input::placeholder{
     font-size: 14px;
     margin-left: 20px;
     transition: transform 0.2s ease;
-
 }
+
+#login-text{
+    text-decoration: none;
+    color: black;
+}
+
 
 #login:hover{
     transform:scale(1.05);
