@@ -245,7 +245,6 @@ input::placeholder{
 
 #section3{
     background-color: #191919;
-    border:2px solid #191919;
     height:90vh;
     width:70vw;
     min-height: 750px;
@@ -602,7 +601,7 @@ input::placeholder{
 }
 
 #container1{
-  min-height: 100vh;
+  min-height:100%;
   overflow: hidden;
   border-radius: 10px;
 
@@ -634,7 +633,7 @@ input::placeholder{
 }
 
 #container2 {
-    min-height: 850px;
+    min-height: 100%;
     border-radius: 10px;
     overflow: hidden;
 
@@ -646,16 +645,16 @@ input::placeholder{
         #0f5309 23%,
         #0c4606 27%,
         #0a3506 27.1%,
-        #092e07 35%,
-        #0c2309 45%,
-        #121212 55%
+        #092e07 40%,
+        #0c2309 50%,
+        #121212 60%
     );
 
     color: white;
 }
 
 #container3{
-    min-height: 850px;
+    min-height: 100%;
     border-radius: 10px;
     overflow: hidden;
     color: white;
@@ -668,14 +667,14 @@ input::placeholder{
         #60436f 23%,
         #523a60 27%,
         #35253f 27.1%,
-        #2c2034 35%,
-        #1f1923 45%,
-        #121212 55%
+        #2c2034 40%,
+        #1f1923 50%,
+        #121212 60%
     );
 }
 
 #container4 {
-    min-height: 850px;
+    min-height: 100%;
     border-radius: 10px;
     overflow: hidden;
     color: white;
@@ -685,12 +684,12 @@ input::placeholder{
         #8b1d36 0%,
         #74162b 10%,
         #5c1022 20%,
-        #460e1a 23%,
+        #460e1a 26%,
         #460e1a 27%,    
         #350c15 27.1%,
-        #350c15 35%,
-        #240f14 45%,
-        #121212 55%
+        #350c15 40%,
+        #240f14 50%,
+        #121212 60%
     );
 }
 
