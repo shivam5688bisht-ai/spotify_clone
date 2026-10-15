@@ -2,9 +2,25 @@ body{
     background-color: #191414;
 }
 
+
+.child{
+    font-size: 12px;
+    font-family: sans-serif;
+
+}
+
+
 #heading{
-    font-size: 70px;
-    margin-bottom:25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:Arial, sans-serif;
+    font-size: 40px;
+    font-weight:800;
+    width:320px; 
+    margin-bottom: 25px; 
+    text-align: center;
+
 }
 
 #signup{
@@ -24,48 +40,62 @@ body{
     
 }
 
-
-
-#heading{
-    font-family:Arial, sans-serif;
-    font-size: 40px;
-    font-weight:800;
-    width:100% ;
-    text-align: center ;  
-
-}
-
 #email{
-    height:36px;
-    width:300px;
+    height:42px;
+    width:318px;
     border:2px solid grey ;
     border-radius: 3px;
     background-color: #191414;
     font-size:10px ;
+    margin-top: 10px;
+    margin-bottom:15px ;
 }
 
 #email:hover{
     border-color: white;
 }
 
+input::placeholder{
+    font-size: 15px;
+    color:white;
+}
+
+input{
+    height:42px;
+    width:318px;
+    caret-color: white;
+    color:white;
+    font-size:16px !important;
+    padding-left:10px;
+    background-color: blue;
+}
+
+
 #continue{
-    height:35px;
-    width:310px;
+    height:46px;
+    width:324px;
     background-color:#1DB954;
     border:2px solid #1DB954;
-    border-radius: 20px;
+    border-radius: 50px;
     font-weight: bold;
-    
+    margin-bottom: 20px;    
+}
+
+#or{
+    margin-bottom:17px ;
+    text-align: center;
+    padding-right:5px;
+
 }
 
 .buttons button{
-    height:40px;
-    width:310px;
+    height:48px;
+    width:321px;
     background-color:#191414;
     border:1px solid grey;
-    border-radius: 20px;
+    border-radius: 50px;
     font-weight: bold;
-    margin:5px;
+    margin:7px;
     color:white;
     font-weight: 900;
     font-size: 14px;
@@ -73,25 +103,38 @@ body{
     justify-content:flex-start ;
     align-items: center;
     text-align: right;
-    gap:30px;
+    gap:40px;
     padding:20px;
-    
+    transition:transform 0.1s ease;
 }
 
 .buttons button:hover{
     border-color: white;    
-    height:45px;
+    transform: scale(1.05);
     
+}
+
+#msg{
+    margin-top:45px;
+    text-align: center;
+    color:#B3B3B3;
+    font-weight:normal
 }
 
 .link{
     color:white;
     text-decoration: none;
+    
 }
 
-.link:hover{
-    font-size: 17px;
-    transition: transform 0.3s ease;
+#link:hover{
+    transform: scale(1.05);   
+}
+
+#link{
+    margin-top:16px ;
+    text-align: center;
+    font-weight: 900;
 }
 
 

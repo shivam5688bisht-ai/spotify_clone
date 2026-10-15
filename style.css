@@ -282,6 +282,12 @@ input::placeholder{
     border-radius: 1000px;
     align-items:center;
     padding-left: 15px;
+    transition: border-color 0.3s ease,background-color 0.3s ease;
+}
+
+#create:hover{
+    background-color:#303030;
+    border-color:#303030;
 }
 
 .box{
@@ -310,6 +316,10 @@ input::placeholder{
     font-weight: 600;
     padding:2px;
     margin-top: 25px;
+}
+
+.play:hover{
+    transform: scale(1.05);
 }
 
 #play2{
@@ -429,6 +439,46 @@ input::placeholder{
     height:175px;
     border-radius: 10px;
     margin-bottom: 8px;
+} 
+
+.player{
+    width:175px;
+    height:175px;
+    display:inline-block;
+    position: relative;
+}
+
+.player::after{
+    content: "▶";    
+    font-size:24px;       
+    position: absolute;
+    left: 80%;
+    top:  85%;
+    transform:translate(-50%,-50%);
+    z-index: 2;
+    color:black;
+    background-color: #1DB954;
+    border-radius: 50px;
+    width:40px;
+    height:40px;
+    padding:5px;
+    padding-left:8px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    pointer-events:none;
+    opacity:0;
+    visibility: hidden;
+    transform:translate(-50%,calc(-50%+20px));
+    transition: opacity 0.3s ease,transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), visibility 0.3s,top 0.3s ease;  
+}
+
+.player:hover::after{
+    top:80%;
+    opacity:1;
+    visibility:visible;
+    transform:translate(-50%,-50%);
 }
 
 #content figcaption{
@@ -484,13 +534,15 @@ input::placeholder{
 
 #content figure{
     margin:0;
+    outline:12.5px solid transparent;
+    border-radius:1px;
+    transition: outline-color 0.2s ease,background-color 0.2s ease;
 }
 
 #content figure:hover{
-    outline:12.5px solid #282828;
+    outline-color: #282828;
     border-radius: 1px;
     background-color: #282828;
-
 }
 
 .content1{
@@ -530,7 +582,7 @@ input::placeholder{
   border-radius: 10px;
 
   background:
-    /* Darken the lower part of the header */
+
     linear-gradient(
       to bottom,
       transparent 35%,
@@ -538,7 +590,7 @@ input::placeholder{
       #121212 100%
     ) top / 100% 550px no-repeat,
 
-    /* Main header colors */
+  
     linear-gradient(
       110deg,
       #e51a8b 0%,
@@ -547,7 +599,6 @@ input::placeholder{
       #c9cbe0 100%
     ) top / 100% 320px no-repeat,
 
-    /* Main page background */
     linear-gradient(
       to bottom,
       #310b13 0px,
