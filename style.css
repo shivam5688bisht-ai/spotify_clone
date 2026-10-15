@@ -2,14 +2,16 @@ body{
     background-color: #191414;
     height: 100vh;
     padding: 5px; 
+    overflow-x:hidden;
+
 }
-/*green-->#1DB954*/
 
 .parent {
     display:flex;
     gap:5px;    
     color:white;
 }
+
 .parent div{
     display:flex;
     gap:5px;    
@@ -32,6 +34,7 @@ input::placeholder{
     border-radius:25px;
     font-family: "sans-serif";
     padding:8px;
+    
 
 }
 .search-bar:has(input:hover) input{
@@ -105,11 +108,13 @@ input::placeholder{
     font-size: 14px;
     margin-left: 20px;
     transition: transform 0.2s ease;
+    
 }
 
 #login-text{
     text-decoration: none;
     color: black;
+    position:sticky;
 }
 
 
@@ -138,6 +143,7 @@ input::placeholder{
     justify-content: flex-end;
     gap:30px;
     margin-left: 30px;
+    white-space: nowrap;
 }
 
 #install{
@@ -147,7 +153,9 @@ input::placeholder{
 #features{
     display:flex;
     justify-content: flex-end;
-    width:200vh;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width:300vw;
 }
 
 #browse{
@@ -210,6 +218,8 @@ input::placeholder{
     border:2px solid #191919;
     height:90vh;
     width:28vw;
+    min-width: 350px;
+    min-height: 750px;
     display:flex;
     justify-self: flex-start;
     flex-direction: column;
@@ -225,12 +235,12 @@ input::placeholder{
     border:2px solid #191919;
     height:90vh;
     width:70vw;
+    min-height: 750px;
+    min-width:300px;
     justify-self: flex-end;
     border-radius: 10px;
     color:white;
-    font-family: sans-serif;
-    overflow: hidden;
-
+    font-family: sans-serif;   
 }
 
 #section3{
@@ -238,18 +248,12 @@ input::placeholder{
     border:2px solid #191919;
     height:90vh;
     width:70vw;
+    min-height: 750px;
+    min-width:300px;
     justify-self: flex-end;
     border-radius: 10px;
     color:white;
     font-family: sans-serif;
-    overflow: auto;
-    scrollbar-width: none;    
-    -ms-overflow-style: none;
-
-}
-
-#section::-webkit-scrollbar{
-    display:none;
 }
 
 .title{
@@ -283,7 +287,7 @@ input::placeholder{
     align-items:center;
     padding-left: 15px;
     transition: border-color 0.3s ease,background-color 0.3s ease;
-}
+} 
 
 #create:hover{
     background-color:#303030;
@@ -297,11 +301,13 @@ input::placeholder{
     color:white;
     width:24.5vw;
     height:12vh;
+    min-width: 300px;
+    min-height: 95.76px;
     border:2px solid #202020;
     padding:16px;
     border-radius: 10px;
     margin-left:5px;
-    overflow: hidden;
+    overflow:hidden;
 }
 
 #box2{
@@ -341,13 +347,12 @@ input::placeholder{
     color: white;
     padding:5px;
     margin-top:auto;
-    margin-bottom: px;
     margin-left:15px;
-    height:5vh;
-    width:20vw;
-    row-gap: 5px;
+    margin-bottom: 10px;
+    height:35px;
+    width:300px;
+    row-gap: 10px;
     column-gap:12px;
-    overflow:hidden ;
 }
 
 .foot a{
@@ -397,7 +402,7 @@ input::placeholder{
 #charts{
     display:flex;
     width:63vw;
-    margin:30px 40px 5px 40px;
+    margin:30px 40px -2.5px 40px;
     padding:5px;
 }
 
@@ -428,10 +433,21 @@ input::placeholder{
 
 #content{
     display: flex;
-    margin:10px 40px;
-    padding:5px;
+    margin:10px 0px;
+    padding:12.5px 45px 5px;
     gap:25px;
+    height: 250px;
+    overflow-x: auto;
+    overflow-y: visible;
+    scrollbar-width: none;    
+    -ms-overflow-style: none;
 }
+
+#content::-webkit-scrollbar{
+    display:none;
+}
+
+
 
 #content img{
 
@@ -489,7 +505,7 @@ input::placeholder{
 }
 
 .content3{
-    margin-left:20px !important;
+    padding-left:25px !important;
 }
 
 .content3 .caption{
@@ -511,7 +527,7 @@ input::placeholder{
 }
 
 .content4{
-    margin-left:20px !important;
+    padding-left:25px !important;
 }
 
 .content4 .caption{
@@ -547,13 +563,22 @@ input::placeholder{
 
 .content1{
     display: flex;
-    margin:10px 18px;
-    padding:5px;
+    margin:10px 0px;
+    padding:5px 23px;
     gap:25px;
+    overflow-x: auto;
+    overflow-y: visible;
+    scrollbar-width: none;    
+    -ms-overflow-style: none;
+}
+
+
+.content1::-webkit-scrollbar{
+    display:none;
 }
 
 .content1 img{
-
+    display:block;
     width:235px;
     height:132px;
     border-radius: 10px;
@@ -667,6 +692,29 @@ input::placeholder{
         #240f14 45%,
         #121212 55%
     );
+}
+
+@media (max-width:1180px){
+    .other span:nth-child(1){
+        display: none !important;
+    }
+}
+
+@media (max-width:1120px){
+    .other span:nth-child(2){
+        display: none !important;
+    }
+}
+
+@media (max-width:1060px){
+    .other span:nth-child(3){
+        display: none !important;
+    }
+}
+@media (max-width:1060px){
+    #separator2{
+        display: none !important;
+    }
 }
 
 
